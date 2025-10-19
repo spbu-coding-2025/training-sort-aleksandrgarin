@@ -17,7 +17,6 @@ int main(){
     int rc;
     int arr[MAX_SIZE];
     int i = 0;
-    printf("Введите целые числа через пробелы\n");
     while (i < MAX_SIZE && (rc = scanf("%d", &arr[i])) == 1){
         i++;
         if (rc != 1){
@@ -28,7 +27,6 @@ int main(){
         }
     }
     sort(arr, i);
-    printf("Отсортированный массив: \n");
     for(int m = 0; m < i; m++){
         printf("%d ", arr[m]);
     }
